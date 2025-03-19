@@ -8,7 +8,7 @@
 html {
   --admin-blue: rgb(25, 146, 212);
   --admin-orange: rgb(238, 185, 64);
-  --title-height: 45px;
+  --title-height: 35px;
 }
 
 .container {
@@ -87,11 +87,13 @@ ul li span {
 }
 /* Main card section -- center */
 .cards-container {
-  background: lightslategray;
+  background: rgb(0, 0, 0, 0.1);
   grid-area: 2 / 2 / 3 / 3;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: var(--title-height) 1fr;
+  gap: 15px;
+  padding: 15px;
 }
 
 .cards {
@@ -99,10 +101,14 @@ ul li span {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 15px;
 }
 
 .card {
+  background-color: white;
+  border-radius: 10px;
+  border-left: 8px solid var(--admin-orange);
+  padding: 20px 15px 20px 20px;
 }
 
 /* Information sidebar -- right */
