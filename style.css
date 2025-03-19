@@ -1,5 +1,10 @@
 @import url(css-reset-josh.css);
 
+html {
+  --admin-blue: rgb(25, 146, 212);
+  --admin-orange: rgb(238, 185, 64);
+}
+
 .container {
   height: 100vh;
   display: grid;
@@ -12,11 +17,26 @@ header {
   grid-area: 1 / 2 / 2 / 3;
 }
 
+.header-top,
+.header-bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.search {
+  flex: 3;
+}
+
+.user {
+  flex: 2;
+}
+
 .sidebar {
-  background: aquamarine;
+  background: var(--admin-blue);
   grid-area: 1 / 1 / 3 / 2;
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 .cards-container {
