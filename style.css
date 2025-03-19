@@ -20,17 +20,32 @@ header {
 .header-top,
 .header-bottom {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
+  gap: 30px;
 }
 
 .search {
-  flex: 3;
+  flex: 4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+input[type="search"] {
+  width: 60%;
+  margin: 20px 0;
 }
 
 .user {
   flex: 2;
+  display: flex;
 }
 
+.greeting {
+  display: flex;
+}
+
+/* Sidebar -- left */
 .sidebar {
   background: var(--admin-blue);
   grid-area: 1 / 1 / 3 / 2;
@@ -39,10 +54,44 @@ header {
   color: white;
 }
 
+/* Main card section -- center */
 .cards-container {
   background: lightslategray;
   grid-area: 2 / 2 / 3 / 3;
   display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 80px 1fr;
+}
+
+.cards {
+  grid-area: 2 / 1 / 3 / 7;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.card {
+}
+
+/* Information sidebar -- right */
+.info-container {
+  grid-area: 1 / 7 / 3 / 9;
+  display: grid;
+  grid-template-rows: 80px 1fr 80px 1fr;
+}
+
+.announcements {
+  grid-area: 1 / 7 / 5 / 9;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.announcements-grid {
+  grid-area: 2 / 1 / 2 / 2;
+}
+.announcements-grid-bottom {
+  grid-area: 4 / 1 / 5 / 2;
 }
 
 ul {
