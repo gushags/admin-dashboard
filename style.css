@@ -65,6 +65,17 @@ input[type="search"] {
   display: flex;
 }
 
+.greeting span {
+  margin: 0 20px 10px 30px;
+}
+
+.greeting div p {
+  font-size: small;
+  font-weight: bold;
+  line-height: 10px;
+  margin-top: 15px;
+}
+
 .buttons {
   margin-right: 25px;
 }
@@ -85,7 +96,7 @@ button {
 }
 
 .avatar-lg {
-  height: 65px;
+  height: 70px;
 }
 
 /* Sidebar -- left */
@@ -135,8 +146,13 @@ ul li span {
   padding: 27px 10px 0 25px;
 }
 
-.user span {
+.user span:nth-of-type(1) {
   color: black;
+  margin: 10px 30px;
+}
+
+.user h4 {
+  margin: 8px 0 0 20px;
 }
 
 /* Main card section -- center */
@@ -164,6 +180,17 @@ ul li span {
   border-left: 8px solid var(--admin-orange);
   padding: 20px 15px 20px 20px;
   box-shadow: var(--box-shadow);
+  position: relative;
+}
+
+.card div {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.card div span {
+  color: black;
+  padding: 0 10px;
 }
 
 /* Information sidebar -- right */
