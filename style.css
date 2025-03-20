@@ -79,6 +79,15 @@ button {
   margin: 0 15px;
 }
 
+.avatar-sm {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.avatar-lg {
+  height: 65px;
+}
+
 /* Sidebar -- left */
 .sidebar {
   background: var(--admin-blue);
@@ -119,6 +128,15 @@ ul li span {
   color: white;
   vertical-align: middle;
   padding-bottom: 5px;
+}
+
+#search-icon {
+  color: black;
+  padding: 27px 10px 0 25px;
+}
+
+.user span {
+  color: black;
 }
 
 /* Main card section -- center */
@@ -190,4 +208,5 @@ hr {
 
 .trend {
   display: flex;
+  margin-bottom: 10px;
 }
