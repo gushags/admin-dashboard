@@ -23,7 +23,7 @@ html {
 
 header {
   grid-area: 1 / 2 / 2 / 3;
-  box-shadow: var(--box-shadow);
+  box-shadow: 3px 3px 2px 2px rgb(0, 0, 0, 0.1);
 }
 
 .header-top,
